@@ -1,7 +1,7 @@
 # 📦 Project Handoff: Coffe Finder
 ## 📝 Overview
-Provide a 2-sentence summary of what this project does and who it
-is for.
+Coffee Finder is a **static, multi-page HTML/CSS web app** with zero dependencies beyond Bootstrap and Google Fonts. It has no server, no build pipeline, and no database — all persistence is handled via `localStorage`.
+
 ## 🛠 Tech Stack
 * **Language:** HTML,CSS
 * **Framework:** N/A
