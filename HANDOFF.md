@@ -23,4 +23,4 @@ Main? (Yes/No)
 * **Tricky Parts:** Explain that one weird bug or complex
 function you wrote so the next person doesn't break it.
 ## 📬 Contact
-* **Primary Dev:** Your Name Ofo-obbacky1
+* **Primary Dev:**  Ofo-obbacky1
