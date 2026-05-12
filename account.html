@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account — Coffee Finder</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="Logo.png" alt="Coffee Finder Logo">
+    <span>Coffee Finder</span>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="account.html" class="active">Account</a>
+  </nav>
+</header>
+
+<main class="page-main">
+
+  <!-- LOGIN -->
+  <section class="auth-box" id="loginBox">
+    <span class="auth-icon" aria-hidden="true">👤</span>
+    <h2>Welcome Back</h2>
+    <p class="auth-sub">Sign in to access your favorites and reviews</p>
+    <input type="email" id="email" class="auth-input" placeholder="Email address" autocomplete="email">
+    <input type="password" id="password" class="auth-input" placeholder="Password" autocomplete="current-password">
+    <button class="cta-btn" onclick="login()">Login</button>
+    <p class="auth-note">Demo: any email + password works</p>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section class="dashboard hidden" id="dashboard">
+
+    <header class="dash-header">
+      <span class="dash-avatar" aria-hidden="true">☕</span>
+      <hgroup>
+        <h2>Welcome Back!</h2>
+        <p id="userEmail" class="dash-email"></p>
+      </hgroup>
+    </header>
+
+    <section class="dash-grid">
+
+      <article class="dash-card">
+        <h4>❤️ Saved Favorites</h4>
+        <ul id="favoriteList" class="item-list">
+          <li class="empty-state">No favorites yet — <a href="explore.html">explore cafés</a></li>
+        </ul>
+      </article>
+
+      <article class="dash-card">
+        <h4>⭐ Rate &amp; Review</h4>
+        <select id="rateValue" class="auth-input">
+          <option value="1">⭐ 1 — Poor</option>
+          <option value="2">⭐⭐ 2 — Fair</option>
+          <option value="3">⭐⭐⭐ 3 — Good</option>
+          <option value="4">⭐⭐⭐⭐ 4 — Great</option>
+          <option value="5">⭐⭐⭐⭐⭐ 5 — Excellent</option>
+        </select>
+        <textarea id="reviewText" class="auth-input" rows="3" placeholder="Write your review…"></textarea>
+        <button class="cta-btn" onclick="saveReview()">Post Review</button>
+        <ul id="reviewList" class="item-list"></ul>
+      </article>
+
+    </section>
+
+    <button class="logout-btn" onclick="logout()">Sign Out</button>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <img src="Logo.png" alt="Logo" class="footer-logo">
+  <p>© 2026 Coffee Finder — Made with ☕ in the Philippines</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

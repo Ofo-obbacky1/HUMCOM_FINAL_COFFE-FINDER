@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Cafés — Coffee Finder</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <img src="Logo.png" alt="Coffee Finder Logo">
+    <span>Coffee Finder</span>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="explore.html" class="active">Explore</a>
+    <a href="account.html">Account</a>
+  </nav>
+</header>
+
+<main class="page-main">
+
+  <hgroup class="page-header">
+    <h1>🌍 Explore Cafés</h1>
+    <p>Find your next favorite coffee shop</p>
+  </hgroup>
+
+  <search class="search-wrap">
+    <input type="search" id="searchInput" class="search-input" placeholder="Search by café name or city…" onkeyup="searchCafe()" aria-label="Search cafés">
+    <span class="search-icon" aria-hidden="true">🔍</span>
+  </search>
+
+  <ul class="cafe-grid" id="cafeGrid">
+
+    <li class="cafe-card-wrap">
+      <article class="cafe-card">
+        <span class="cafe-emoji">☕</span>
+        <h4>Arabica House</h4>
+        <p class="cafe-location">📍 Kidapawan City</p>
+        <p class="cafe-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</p>
+        <button class="fav-btn" onclick="saveFavorite('Arabica House', this)">❤️ Save Favorite</button>
+      </article>
+    </li>
+
+    <li class="cafe-card-wrap">
+      <article class="cafe-card">
+        <span class="cafe-emoji">🍰</span>
+        <h4>Cafe Mocha</h4>
+        <p class="cafe-location">📍 Davao City</p>
+        <p class="cafe-stars" aria-label="4 stars">⭐⭐⭐⭐</p>
+        <button class="fav-btn" onclick="saveFavorite('Cafe Mocha', this)">❤️ Save Favorite</button>
+      </article>
+    </li>
+
+    <li class="cafe-card-wrap">
+      <article class="cafe-card">
+        <span class="cafe-emoji">🥤</span>
+        <h4>Brew Spot</h4>
+        <p class="cafe-location">📍 Cotabato City</p>
+        <p class="cafe-stars" aria-label="4 stars">⭐⭐⭐⭐</p>
+        <button class="fav-btn" onclick="saveFavorite('Brew Spot', this)">❤️ Save Favorite</button>
+      </article>
+    </li>
+
+    <li class="cafe-card-wrap">
+      <article class="cafe-card">
+        <span class="cafe-emoji">☕</span>
+        <h4>Latte Corner</h4>
+        <p class="cafe-location">📍 General Santos</p>
+        <p class="cafe-stars" aria-label="5 stars">⭐⭐⭐⭐⭐</p>
+        <button class="fav-btn" onclick="saveFavorite('Latte Corner', this)">❤️ Save Favorite</button>
+      </article>
+    </li>
+
+  </ul>
+
+</main>
+
+<footer class="site-footer">
+  <img src="Logo.png" alt="Logo" class="footer-logo">
+  <p>© 2026 Coffee Finder — Made with ☕ in the Philippines</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
